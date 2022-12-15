@@ -27,4 +27,4 @@ restart the terminal
 * <https://pythonhow.com/python-tutorial/flask/How-a-Flask-app-works/>
 * <https://flask.palletsprojects.com/en/2.2.x/quickstart/#accessing-request-data>
 * <https://www.geeksforgeeks.org/python-flask-request-object/>
-
+* <https://hackersandslackers.com/flask-sqlalchemy-database-models/>

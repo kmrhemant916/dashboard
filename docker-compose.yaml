@@ -1,0 +1,44 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: events
+      MYSQL_ROOT_HOST: '%'
+    networks:
+      - app-network
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dashboard:latest
+    container_name: dashboard
+    depends_on:
+      - mysql
+    ports:
+      - 5000:5000
+    working_dir: /opt
+    volumes:
+      - ./:/opt
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_DB: events
+    networks:
+      - app-network
+    links:
+      - mysql
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+  mysql-data:
+    driver: local
