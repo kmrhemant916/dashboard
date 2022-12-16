@@ -28,3 +28,8 @@ restart the terminal
 * <https://flask.palletsprojects.com/en/2.2.x/quickstart/#accessing-request-data>
 * <https://www.geeksforgeeks.org/python-flask-request-object/>
 * <https://hackersandslackers.com/flask-sqlalchemy-database-models/>
+
+## JWT
+
+* <https://www.geeksforgeeks.org/json-web-token-jwt/>
+* <https://www.geeksforgeeks.org/using-jwt-for-user-authentication-in-flask/>
