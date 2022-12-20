@@ -115,9 +115,8 @@ def create_gitlab_events(current_user):
     return {"event": request_data}, 201
 
 @app.get("/gitlab/events")
-@token_required
+# @token_required
 def get_gitlab_events(current_user):
-    print("h")
     response = []
     for i in GitlabEvents.query.all():
         elem = {"user_name": i.user_name, "repository_name": i.repository_name}

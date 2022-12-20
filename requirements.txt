@@ -3,3 +3,6 @@ flask-sqlalchemy
 pymysql
 cryptography
 PyJWT
+flask-smorest
+python-dotenv
+marshmallow

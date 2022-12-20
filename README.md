@@ -1,9 +1,8 @@
 # dashboard
-CICD Dashboard
 
 ## Create venv in the current working directory
 
-```
+```sh
 python3.9 -m venv .venv
 ```
 
@@ -22,6 +21,14 @@ restart the terminal
 
 ``` docker run --name dashboard -p 5000:5000 -v $(pwd):/opt -d dashboard:latest ```
 
+## jsonify
+
+* <https://www.educba.com/flask-jsonify/>
+
+## make_response
+
+* <https://www.educative.io/answers/what-is-flaskmakeresponse>
+
 ## Useful links
 
 * <https://pythonhow.com/python-tutorial/flask/How-a-Flask-app-works/>
@@ -33,3 +40,11 @@ restart the terminal
 
 * <https://www.geeksforgeeks.org/json-web-token-jwt/>
 * <https://www.geeksforgeeks.org/using-jwt-for-user-authentication-in-flask/>
+
+## Flask-Smorest
+
+* 
+
+## Module and package
+
+* <https://www.scaler.com/topics/module-and-package-in-python/>
