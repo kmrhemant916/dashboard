@@ -21,6 +21,10 @@ restart the terminal
 
 ``` docker run --name dashboard -p 5000:5000 -v $(pwd):/opt -d dashboard:latest ```
 
+## Flask
+
+* <https://pythonbasics.org/what-is-flask-python/>
+
 ## jsonify
 
 * <https://www.educba.com/flask-jsonify/>
@@ -43,8 +47,26 @@ restart the terminal
 
 ## Flask-Smorest
 
-* 
+* <https://flask-smorest.readthedocs.io/en/latest/#:~:text=flask%2Dsmorest%20(formerly%20known%20as,to%20serialize%20and%20deserialize%20data.>
+
+## marshmallow
+
+* <https://marshmallow.readthedocs.io/en/stable/>
 
 ## Module and package
 
 * <https://www.scaler.com/topics/module-and-package-in-python/>
+
+## MethodView
+
+* <https://flask.palletsprojects.com/en/2.1.x/views/>
+
+## What is an ORM
+
+* <https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/>
+
+## Context
+
+* <https://overiq.com/flask-101/contexts-in-flask/>
+* <https://www.askpython.com/python-modules/flask/flask-application-request-context>
+* Flask pushes(or activates) the Application Context automatically when a particular request comes in and removes it once the request is handled.
